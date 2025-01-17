@@ -1,9 +1,7 @@
 html {
     width: 102vw;
-    cursor: url('misha.png'), auto;
+    /* cursor: url('images/misha.png'), auto; */
 }
-
-
 @font-face {
     font-family: 'Dancing Script';
     src: url('./Dancing_Script/DancingScript-VariableFont_wght.ttf'),
@@ -21,13 +19,23 @@ html {
     font-style: normal;
 }
 
-body {
-    background-image: url("anima.gif");
+.bk1 {
+    background-image: url("images/bk.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 0vh;
     overflow-x: hidden;
+
 }
+.bk2 {
+    background-image: url("images/rooms2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 0vh;
+    overflow-x: hidden;
+    transition: 2s;
+}
+
 .header1 {
     display: block;
     position: fixed;
@@ -35,18 +43,18 @@ body {
     left: 0;
     height: 8vh;
     width: 100vw;
-    z-index: 999;
+    z-index: 995;
 }
 .header2 {
     display: block;
     position: fixed;
     top: 0;
-    padding-top: 10vh;
+    padding-top: 4vh;
     left: 0;
     height: 8vh;
     width: 100vw;
-    background: linear-gradient(rgba(241, 3, 201, 0.932), rgba(241, 0, 40, 0.897));
-    z-index: 999;
+    background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
+    z-index: 995;
 
     border-image: linear-gradient(to right, rgb(241, 3, 3), rgb(197, 241, 3), rgb(3, 39, 241), rgb(0, 241, 12)) 2;
     border-bottom-style: solid;
@@ -59,13 +67,45 @@ body {
     font-size: 170%;
 }
 
+.lang {
+   display: grid;
+   height: 30vh;
+   top: 11vh;
+   width: 8vw;
+   right: 0;
+   position: fixed;
+    background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
+   z-index: 999;
+}
+.lang2 {
+   display: grid;
+   height: 30vh;
+   top: 11vh;
+   width: 8vw;
+   right: -10vw;
+   position: fixed;
+   background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
+   z-index: 999;
+}
+.lang3 {
+   display: grid;
+   height: 30vh;
+   top: 18vh;
+   width: 8vw;
+   right: 0;
+   position: fixed;
+   z-index: 999;
+}
+
+
+
 a {
 
     color: white;
     font-family: 'Dancing Script';
     text-decoration: none;
 
-    cursor: url('misha21.png'), pointer;
+    /* cursor: url('images/misha21.png'), pointer; */
 }
 p {
     font-family: 'PT Serif';
@@ -74,12 +114,17 @@ a:hover {
     color: rgba(255, 255, 255, 0.932);
 }
 .blancos:first-child {
-    margin-left: 47vw;
+    margin-left: 30vw;
 }
 .blancos {
     margin-left: 4vw;
     font-size: 170%;
 }
+.blancos2 {
+    height: 2vh;
+    font-size: 170%;
+}
+
 .base {
     display: block;
     visibility: visible;
@@ -101,7 +146,7 @@ a:hover {
     width: 5vw;
     background-color: green;
     border-radius: 100px;
-    cursor: url('misha21.png'), pointer;
+    cursor: pointer;
 }
 .pre {
     color: white;
@@ -204,7 +249,7 @@ a:hover {
     border-radius: 200px;
     border-style: solid;
     border-color: red;
-    cursor: url('misha21.png'), pointer;
+    cursor: pointer;
 }
 .about2 {
     display: grid;
@@ -233,6 +278,7 @@ a:hover {
 .welcome {
     color: white;
     text-align: center;
+    font-size: 250%;
 }
 .politics {
     margin-top: 30vh;
@@ -249,27 +295,96 @@ a:hover {
     font-size: 120%;
 }
 .blockes {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
     margin-top: 5vh;
     margin-left: 7vw;
     padding-top: 10vh;
     height: 60vh;
     width: 83vw;
-    background-color: rgba(27, 3, 241, 0.233);
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
-.block {
+
+.blockes2 {
     display: grid;
-    grid-template-columns: 10vw 70vw;
+    grid-template-columns: 10vw 73vw;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    height: 70vh;
+    width: 83vw;
+}
+
+
+
+
+
+
+
+/* information command */
+
+
+
+.arrows {
+   margin-top: 4vh;
+   margin-left: 4vw;
+   font-size: 350%;
+   height: 9vh;
+   width: 3vw;
+   color: white;
+   cursor: pointer;
+}
+
+.title {
+  margin-left: 20vw;
+  color: white;
+  font-size: 250%;
+}
+
+.uga {
+    display: grid;
+    grid-template-columns: 14vw 46vw;
     height: 10vh;
+    margin-left: 2vw;
+    padding-top: 1vh;
+    margin-top: 2vh;
+    padding-left: 4vw;
+    width: 58vw;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.subtirle {
+  margin-top: 1vh;
+  color: white;
+  font-size: 200%;
+}
+.rou {
+    margin-top: 2vh;
+    color: white;
+    font-size: 130%;
+}
+
+
+/* information command end */
+
+
+
+
+
+
+
+
+
+.block {
+    height: 20vh;
     margin-left: 10vw;
     padding-top: 2vh;
     margin-top: 2vh;
     padding-left: 4vw;
-    width: 64vw;
+    width: 15vw;
     background-color: rgba(0, 0, 0, 0.76);
-    border-radius: 160px;
-    cursor: url('misha21.png'), pointer;
+    border-radius: 30px;
+    cursor: pointer;
 }
 .block2 {
     display: grid;
@@ -282,7 +397,7 @@ a:hover {
     width: 64vw;
     background-color: rgba(185, 4, 4, 0.76);
     border-radius: 160px;
-    cursor: url('misha21.png'), pointer;
+    cursor: pointer;
 }
 .block2:hover {
     background-color: rgba(219, 8, 8, 0.76);
@@ -293,8 +408,6 @@ a:hover {
 .comma {
     margin-top: 1.2vh;
     color: white;
-    width: 6vw;
-    background-color: black;
 }
 .commar {
     margin-top: 2vh;
@@ -417,6 +530,20 @@ a:hover {
     .blancos:first-child {
         margin-left: 30vw;
     }
+    .blancos:first-child { 
+    margin-left: 8vw;
+    }
+    .bk1, .bk2{
+       background-position-x: 0vw;
+background-size: 140vw 120vh;   
+    }
+ 
+    .lang, .lang3 {
+    right: 0;
+    width: 12vw;
+    }
+    
+    
     .base {
         margin-left: 27vw;
         width: 40vw;
@@ -424,10 +551,7 @@ a:hover {
     .about2 {
         margin-top: -45vh;
     }
-    body {
-        background-position-x: -20vw;
-        background-size: 140vw 120vh;
-    }
+
     .politics {
         margin-left: 0vw;
     }
@@ -456,33 +580,54 @@ a:hover {
         width: 17vw;
     }
     .block{
-        grid-template-columns: 12vw 70vw;
-        margin-left: 1vw;
-        padding-left: 2vw;
-        width: 84vw;
+        height: 15vh;
+        width: 20vw;
     }
-    .block2 {
-        grid-template-columns: 16vw 70vw;
-        margin-left: 1vw;
-        padding-left: 2vw;
-        width: 84vw;
-    }
-    .blockes {
-        margin-left: 5vw;
-        width: 90vw;
-    }
+
+     .blockes {
+     padding-left: 4vw;
+     grid-template-columns: 25vw 25vw 10vw;
+     }
     .comma {
-        height: 7vh;
-        width: 8vw;
+    font-size: 160%;
     }
+    .title {
+    margin-left: 10vw;
+    }
+    
+
     .commar {
         font-size: 130%;
     }
 }
+@media only screen and (max-width: 800px) {
+    .blancos:first-child { 
+    margin-left: 3vw;
+    }
+     .block{
+        height: 16vh;
+        width: 23vw;
+    }
+
+     .blockes {
+     padding-left: 4vw;
+     grid-template-columns: 27vw 27vw 10vw;
+     }
+     
+}
+
 @media only screen and (max-width: 761px) {
     .blancos:first-child {
         margin-left: 14vw;
     }
+    .blancos:first-child { 
+    margin-left: 2vw;
+    }
+    .lang, .lang3 {
+    width: 14vw;
+    }
+    
+    
     .base {
         margin-left: 22vw;
         width: 47vw;
@@ -515,6 +660,12 @@ a:hover {
         background-position-x: -60vw;
         background-size: 240vw 120vh
     }
+    .bk2 {
+        transition: 0s;
+    }
+    .politics {
+    margin-top: -50vh;
+    }
     .base {
         margin-left: 6vw;
         width: 80vw;
@@ -522,9 +673,10 @@ a:hover {
     .BurgerShow {
         position: fixed;
         display: grid;
-        background-color: black;
-        right: 0;
-        margin-top: 5vh;
+    background: linear-gradient(rgb(23 94 255 / 40%), rgb(7 167 145 / 35%));
+        width: 100vw;
+        height: 100vh;
+        margin-top: 8vh;
     }
     .Burgerhide {
         position: fixed;
@@ -535,11 +687,11 @@ a:hover {
     }
     .Button {
         position: absolute;
-        margin-top: -5vh;
+        margin-top: -3vh;
         right: 8vw;
         color: white;
         font-size: 400%;
-        cursor: url('misha21.png'), pointer;
+        cursor: pointer;
         width: 5vw;
     }
 
@@ -612,7 +764,7 @@ a:hover {
         background-color: aqua;
         border-radius: 50px;
         border-color: transparent;
-        cursor: url('misha21.png'), pointer;
+        cursor: pointer;
     }
     .usermess {
         width: 22vw;
@@ -629,6 +781,9 @@ a:hover {
     body {
         background-position-x: -140vw;
         background-size: 400vw 120vh;
+    }
+    .blancos {
+        font-size: 146%;
     }
     .base {
         margin-top: 33vh;

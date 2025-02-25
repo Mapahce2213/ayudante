@@ -1,5 +1,8 @@
 'use strict';
 
+console.log('%cDO NOT PASTE TEXT HERE! YOU CAN BE HACKED!', 'color: red; font-size: 20px;');
+console.log('%cBut if you know about that, you can join to our team!', 'color: blue; font-size: 15px;'); // https://forms.gle/oh2A8zoPcKhe52h3A
+console.log('%chttps://forms.gle/oh2A8zoPcKhe52h3A', 'color: blue; font-size: 12px;');
 
 let buca = document.getElementById("welcome");
 
@@ -22,6 +25,9 @@ let opened5 = false;
        
         
 let header = document.getElementById("hed");
+
+let blobkbench = document.getElementById("guide");
+let imgbench = document.getElementById("gogo");
 
 let inforCambia = document.getElementById("politicar");
 let inforCambia2 = document.getElementById("politicar2");
@@ -68,9 +74,9 @@ let linkir1 = document.getElementById("about");
 linkir1.onclick = about;
 
 function homa(event) {
-
+if(event) {
     event.preventDefault();
-
+}
     buca.style = "";
     
     buca2.style = "";
@@ -82,12 +88,20 @@ function homa(event) {
     });
 
     if(document.documentElement.clientWidth < 480) {
-        cierra();
+       
     }
     }
-    
+    homa();
     let linkir12 = document.getElementById("homa");
     linkir12.onclick = homa;
+
+setTimeout(() => {
+
+blobkbench.remove();
+imgbench.remove();
+
+}, 3000)
+
 
 function cambia() {
 
@@ -95,6 +109,10 @@ function cambia() {
 
         if(document.documentElement.scrollTop > 20) {
             header.className = "header2";
+            if(blobkbench) {
+            blobkbench.className = "guide2";
+            imgbench.className= "imag2";
+            }
             
             if(opened5) {
             imoda.className = "lang";
@@ -102,6 +120,10 @@ function cambia() {
         } else {
             header.className = "header1";
             
+            if(blobkbench) {
+            blobkbench.className = "guide";
+            imgbench.className= "imag";
+            }
             if(opened5) {
             imoda.className = "lang3";
             }
@@ -167,7 +189,6 @@ let burgerButton = document.createElement("div");
 burgerButton.id = "button";
 burgerButton.className = "Button";
 burgerButton.innerHTML = "=";
-
     function cierra() {
         burger.className = "Burgerhide";
 
@@ -373,7 +394,9 @@ burgerButton.removeEventListener("click", bur2);
         let oj4as2 = document.createElement("p");   
              
      
-          
+            let ogh1ftz = document.createElement("div");
+        let oj4asz = document.createElement("h1");
+        let oj4as2z = document.createElement("p");         
         
         let gomma2 = document.createElement("h1");
         
@@ -389,6 +412,13 @@ burgerButton.removeEventListener("click", bur2);
         let uj3as2 = document.createElement("p");   
         
         
+        let ugh2ftK = document.createElement("div");
+        let uj3asK = document.createElement("h1");
+        let uj3as2K = document.createElement("p");   
+        
+        let ugh2ftD = document.createElement("div");
+        let uj3asD = document.createElement("h1");
+        let uj3as2D = document.createElement("p"); 
         
 
         let blocke5 = document.createElement("div");
@@ -409,7 +439,7 @@ burgerButton.removeEventListener("click", bur2);
         }
         
         inforCambia.textContent = "Commandos";
-
+       popa.style = "";
         polirica.remove();
 
         inforCambia2.remove();
@@ -552,7 +582,7 @@ burgerButton.removeEventListener("click", bur2);
        gh1ur.append(ugh1ft)
        
        uj4as.className = "subtirle";
-       uj4as.textContent = "*mute";
+       uj4as.textContent = "/mute <@user> <time> <reason>";
        
        ugh1ft.append(uj4as);
        
@@ -562,7 +592,7 @@ burgerButton.removeEventListener("click", bur2);
        ugh1ft.append(uj4as2);
        
        
-       
+       popa.style = "height: 130vh";
        
        
        
@@ -574,7 +604,7 @@ burgerButton.removeEventListener("click", bur2);
        gh1ur.append(cgh1ft)
        
        cj4as.className = "subtirle";
-       cj4as.textContent = "*ban";
+       cj4as.textContent = "/ban <@user> <reason>";
        
        cgh1ft.append(cj4as);
        
@@ -591,7 +621,7 @@ burgerButton.removeEventListener("click", bur2);
        gh1ur.append(ogh1ft)
        
        oj4as.className = "subtirle";
-       oj4as.textContent = "*kick";
+       oj4as.textContent = "/kick <@user> <reason>";
        
        ogh1ft.append(oj4as);
        
@@ -600,6 +630,84 @@ burgerButton.removeEventListener("click", bur2);
        
        ogh1ft.append(oj4as2); 
 
+
+
+              ogh1ftz.className = "ugapora";
+       
+       gh1ur.append(ogh1ftz)
+       
+       oj4asz.className = "subtirle";
+       oj4asz.textContent = "*clear <count>";
+       
+       ogh1ftz.append(oj4asz);
+       
+       oj4as2z.className = "rou";
+       oj4as2z.textContent = "Borrar mensajes / limpiar chat";
+       
+       ogh1ftz.append(oj4as2z); 
+       
+       
+       
+       
+             ugh2ft.className = "ugapora";
+       
+       gh1ur.append(ugh2ft)
+       
+       uj3as.className = "subtirle";
+
+       uj3as.textContent = "*automod <on/off>";
+       
+       ugh2ft.append(uj3as);
+       
+       uj3as2.className = "rou";
+       uj3as2.textContent = "Prender/apagar automod de los chats";
+
+       
+       ugh2ft.append(uj3as2); 
+       
+       
+       
+       
+       ugh2ftK.className = "ugapora";
+       
+       gh1ur.append(ugh2ftK)
+       
+       uj3asK.className = "subtirle";
+
+
+       uj3asK.textContent = "/constructor <values>";
+       
+       ugh2ftK.append(uj3asK);
+       
+       uj3as2K.className = "rou";
+       uj3as2K.textContent = "Crear chat/roles en tu servidor";
+
+       
+       ugh2ftK.append(uj3as2K); 
+       
+       
+       
+       
+       ugh2ftD.className = "ugapora";
+       
+       gh1ur.append(ugh2ftD)
+       
+       uj3asD.className = "subtirle";
+
+       uj3asD.textContent = "/autoparther <on/off>";
+       
+       ugh2ftD.append(uj3asD);
+       
+       uj3as2D.className = "rou";
+       uj3as2D.textContent = "Hacer parther con otro servidor autor";
+
+       
+       ugh2ftD.append(uj3as2D); 
+       
+       
+       
+       
+       
     }
 
 
@@ -636,15 +744,16 @@ burgerButton.removeEventListener("click", bur2);
        gh1ur.innerHTML = "";
        divah.append(gh1ur)
        
+       popa.style = "height: 117vh";
        
        // blockes
        
-       ugh1ft.className = "uga";
+       ugh1ft.className = "ugapora";
        
        gh1ur.append(ugh1ft)
        
        uj4as.className = "subtirle";
-       uj4as.textContent = "*help";
+       uj4as.textContent = "*help /help";
        
        ugh1ft.append(uj4as);
        
@@ -661,7 +770,7 @@ burgerButton.removeEventListener("click", bur2);
        
        
        
-       cgh1ft.className = "uga";
+       cgh1ft.className = "ugapora";
        
        gh1ur.append(cgh1ft)
        
@@ -678,7 +787,7 @@ burgerButton.removeEventListener("click", bur2);
        
        
        
-       ogh1ft.className = "uga";
+       ogh1ft.className = "ugapora";
        
        gh1ur.append(ogh1ft)
        
@@ -691,6 +800,69 @@ burgerButton.removeEventListener("click", bur2);
        oj4as2.textContent = "Para checkar el code";
        
        ogh1ft.append(oj4as2); 
+       
+       
+       
+              ogh1ftz.className = "ugapora";
+       
+       gh1ur.append(ogh1ftz)
+       
+       oj4asz.className = "subtirle";
+       oj4asz.textContent = "/captcha";
+       
+       ogh1ftz.append(oj4asz);
+       
+       oj4as2z.className = "rou";
+       oj4as2z.textContent = "Pasar captcha de servidor";
+       
+       ogh1ftz.append(oj4as2z); 
+       
+       
+       
+       
+       
+       
+             ugh2ftK.className = "ugapora";
+       
+       gh1ur.append(ugh2ftK)
+       
+       uj3asK.className = "subtirle";
+
+
+
+       uj3asK.textContent = "/porn";
+       
+       ugh2ftK.append(uj3asK);
+       
+       uj3as2K.className = "rou";
+       uj3as2K.textContent = "Se puede usar solo en NSFW channel 18+";
+
+       
+       ugh2ftK.append(uj3as2K); 
+       
+       
+
+       
+       
+       ugh2ftD.className = "ugapora";
+       
+       gh1ur.append(ugh2ftD)
+       
+       uj3asD.className = "subtirle";
+
+       uj3asD.textContent = "/createroom";
+       
+       ugh2ftD.append(uj3asD);
+
+       
+       uj3as2D.className = "rou";
+       uj3as2D.textContent = "Crear voice privada";
+
+       
+       ugh2ftD.append(uj3as2D); 
+       
+       
+       
     }
 
 
@@ -732,9 +904,11 @@ burgerButton.removeEventListener("click", bur2);
        divah.append(gh1ur)
        
        
+       popa.style = "height: 130vh";
+              
        // blockes
        
-       ugh1ft.className = "uga";
+       ugh1ft.className = "ugapora";
        
        gh1ur.append(ugh1ft)
        
@@ -756,7 +930,7 @@ burgerButton.removeEventListener("click", bur2);
        
        
        
-       cgh1ft.className = "uga";
+       cgh1ft.className = "ugapora";
        
        gh1ur.append(cgh1ft)
        
@@ -773,7 +947,7 @@ burgerButton.removeEventListener("click", bur2);
        
        
        
-       ogh1ft.className = "uga";
+       ogh1ft.className = "ugapora";
        
        gh1ur.append(ogh1ft)
        
@@ -788,7 +962,7 @@ burgerButton.removeEventListener("click", bur2);
        ogh1ft.append(oj4as2); 
        
        
-      ugh2ft.className = "uga";
+      ugh2ft.className = "ugapora";
        
        gh1ur.append(ugh2ft)
        
@@ -803,6 +977,66 @@ burgerButton.removeEventListener("click", bur2);
 
        
        ugh2ft.append(uj3as2); 
+       
+       
+       
+       
+       
+                     ogh1ftz.className = "ugapora";
+       
+       gh1ur.append(ogh1ftz)
+       
+
+       oj4asz.className = "subtirle";
+       oj4asz.textContent = "/victorina";
+       
+       ogh1ftz.append(oj4asz);
+       
+       oj4as2z.className = "rou";
+       oj4as2z.textContent = "Para jugar en victorina";
+       
+       ogh1ftz.append(oj4as2z); 
+       
+       
+       
+       
+       
+       
+             ugh2ftK.className = "ugapora";
+       
+       gh1ur.append(ugh2ftK)
+       
+       uj3asK.className = "subtirle";
+
+
+       uj3asK.textContent = "mf.create";
+       
+       ugh2ftK.append(uj3asK);
+       
+       uj3as2K.className = "rou";
+       uj3as2K.textContent = "Crear canal para jugar en Mafia Game";
+
+       
+       ugh2ftK.append(uj3as2K); 
+       
+       
+       
+       
+       ugh2ftD.className = "ugapora";
+       
+       gh1ur.append(ugh2ftD)
+       
+       uj3asD.className = "subtirle";
+
+       uj3asD.textContent = "mf.join";
+       
+       ugh2ftD.append(uj3asD);
+       
+       uj3as2D.className = "rou";
+       uj3as2D.textContent = "Entrar en Mafia Game";
+
+       
+       ugh2ftD.append(uj3as2D); 
        
        
 
@@ -838,7 +1072,7 @@ burgerButton.removeEventListener("click", bur2);
        
        // blockes
        
-       ugh1ft.className = "uga";
+       ugh1ft.className = "ugapora";
        
        gh1ur.append(ugh1ft)
        
@@ -900,7 +1134,6 @@ burgerButton.removeEventListener("click", bur2);
 
 
     blocke4.addEventListener("click", block4)
-
 
 
 

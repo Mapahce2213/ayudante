@@ -1,5 +1,5 @@
 html {
-    width: 102vw;
+    width: 100em;
     /* cursor: url('images/misha.png'), auto; */
 }
 @font-face {
@@ -39,26 +39,26 @@ html {
 .header1 {
     display: block;
     position: fixed;
-    top: 10vh;
+    top: 4em;
     left: 0;
-    height: 8vh;
-    width: 100vw;
+    height: 3em;
+    width: 100em;
     z-index: 995;
 }
 .header2 {
     display: block;
     position: fixed;
     top: 0;
-    padding-top: 4vh;
+    padding-top: 1.5em;
     left: 0;
-    height: 8vh;
-    width: 100vw;
-    background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
+    height: 3em;
+    width: 100em;
+    background: linear-gradient(rgb(23 199 255 / 93%), rgb(26 1 153 / 90%));
     z-index: 995;
 
     border-image: linear-gradient(to right, rgb(241, 3, 3), rgb(197, 241, 3), rgb(3, 39, 241), rgb(0, 241, 12)) 2;
     border-bottom-style: solid;
-    border-width: 1vh;
+    border-width: 0.4em;
 
     animation: borderir 5s linear infinite;
 }
@@ -67,11 +67,44 @@ html {
     font-size: 170%;
 }
 
+.imag {
+height: 5em;
+width: 5em;
+position: fixed;
+top: 7em;
+margin-left: 30em;
+}
+
+.guide {
+position: fixed;
+top: 12em;
+margin-left: 18em;
+width: 30em;
+text-align: center;
+background-color: white;
+}
+.imag2 {
+height: 5em;
+width: 5em;
+position: fixed;
+top: 5em;
+margin-left: 30em;
+}
+
+.guide2 {
+position: fixed;
+top: 10em;
+margin-left: 18em;
+width: 30em;
+text-align: center;
+background-color: white;
+}
+
 .lang {
    display: grid;
-   height: 30vh;
-   top: 11vh;
-   width: 8vw;
+   height: 11.5em;
+   top: 4.5em;
+  width: 7em;
    right: 0;
    position: fixed;
     background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
@@ -79,10 +112,10 @@ html {
 }
 .lang2 {
    display: grid;
-   height: 30vh;
-   top: 11vh;
-   width: 8vw;
-   right: -10vw;
+   height: 11.5em;
+   top: 4.5em;
+  width: 7em;
+    right: -10em;
    position: fixed;
    background: linear-gradient(rgb(23 255 52 / 93%), rgb(7 167 20 / 90%));
    z-index: 999;
@@ -91,7 +124,7 @@ html {
    display: grid;
    height: 30vh;
    top: 18vh;
-   width: 8vw;
+    width: 7em;
    right: 0;
    position: fixed;
    z-index: 999;
@@ -114,25 +147,25 @@ a:hover {
     color: rgba(255, 255, 255, 0.932);
 }
 .blancos:first-child {
-    margin-left: 30vw;
+    margin-left: 14.5em;
 }
 .blancos {
-    margin-left: 4vw;
+    margin-left: 2em;
     font-size: 170%;
 }
 .blancos2 {
-    height: 2vh;
+    height: 1em;
     font-size: 170%;
 }
 
 .base {
     display: block;
     visibility: visible;
-    margin-top: 38vh;
-    margin-left: 33vw;
+    margin-top: 15em;
+    margin-left: 28em;
     padding: 5px;
     height: auto;
-    width: 30vw;
+    width: 25em;
     background: linear-gradient(rgba(3, 213, 241, 0.315), rgba(0, 241, 40, 0.322));
     border-radius: 50px;
     transition: 2s;
@@ -140,10 +173,10 @@ a:hover {
 }
 .preg {
     position: fixed;
-    right: 2vw;
-    bottom: 2vh;
-    height: 11vh;
-    width: 5vw;
+    right: 2em;
+    bottom: 1em;
+    height: 4em;
+    width: 4em;
     background-color: green;
     border-radius: 100px;
     cursor: pointer;
@@ -151,7 +184,7 @@ a:hover {
 .pre {
     color: white;
     text-align: center;
-    margin-top: 1.3vh;
+    margin-top: 0.2em;
     font-size: 250%;
     z-index: 9;
 }
@@ -253,10 +286,10 @@ a:hover {
 }
 .about2 {
     display: grid;
-    grid-template-columns: 32vw 32vw 30vw;
+    grid-template-columns: 26.4em 26.4em 26em;
     overflow: hidden;
-    margin-top: -45vh;
-    margin-left: 100vw;
+    margin-top: -18em;
+    margin-left: 100em;
     padding: 5px;
     height: auto;
     transition: 2s;
@@ -273,7 +306,7 @@ a:hover {
 }
 /*     background: linear-gradient(rgba(27, 3, 241, 0.233), rgba(0, 241, 108, 0.205));
     border-radius: 50px;
-    margin-left: 100vw;
+    margin-left: 100em;
 */
 .welcome {
     color: white;
@@ -287,7 +320,7 @@ a:hover {
     height: 90vh;
     width: 96vw;
     border-radius: 50px;
-    background: linear-gradient(rgba(27, 3, 241, 0.233), rgba(0, 241, 108, 0.205));
+    background: linear-gradient(rgb(27 3 241 / 51%), rgb(0 241 108 / 41%));
 }
 .text {
     color: white;
@@ -341,7 +374,7 @@ a:hover {
 
 .uga {
     display: grid;
-    grid-template-columns: 14vw 46vw;
+    grid-template-columns: 35vw 46vw;
     height: 10vh;
     margin-left: 2vw;
     padding-top: 1vh;
@@ -350,8 +383,21 @@ a:hover {
     width: 58vw;
     background-color: rgba(0, 0, 0, 0.76);
     border-radius: 30px;
-    cursor: pointer;
 }
+.ugapora {
+    display: grid;
+    grid-template-columns: 25vw 46vw;
+    height: 10vh;
+    margin-left: 2vw;
+    padding-top: 1vh;
+    margin-top: 2vh;
+    padding-left: 4vw;
+    width: 58vw;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 30px;
+}
+
+
 
 .subtirle {
   margin-top: 1vh;
@@ -458,62 +504,99 @@ a:hover {
 }
 
 
-/* Media mobile CSS */
-@media only screen and (max-width: 1115px) {
-    .blancos:first-child {
-        margin-left: 40vw;
-    }
+
+
+
+
+@media only screen and (max-width: 1065px) {
+.blancos:first-child {
+    margin-left: 6em;
+}
+.blancos {
+    margin-left: 2em;
+    font-size: 170%;
+}
+.blancos2 {
+    height: 1em;
+    font-size: 170%;
+}
+.imag {
+margin-left: 17em;
+}
+
+.guide {
+margin-left: 5em;
+}
+.imag2 {
+margin-left: 17em;
+}
+
+.guide2 {
+margin-left: 6em;
+}
     .base {
-        margin-left: 27vw;
-        width: 40vw;
+        margin-left: 22em;
     }
     .about2 {
-        margin-top: -45vh;
+    grid-template-columns: 22.4em 22.4em 26em;
     }
-    .block{
-        grid-template-columns: 12vw 70vw;
-        margin-left: 1vw;
-        padding-left: 2vw;
-        width: 84vw;
+    
+    .block {
+    margin-left: 2em;
+    padding-left: 4vw;
+    width: 14em;
+}
+.blockes {
+    grid-template-columns: 18em 18em 18em;
+    
     }
-    .block2 {
-        grid-template-columns: 16vw 70vw;
-        margin-left: 1vw;
-        padding-left: 2vw;
-        width: 84vw;
-    }
-    .blockes {
-        margin-left: 5vw;
-        width: 90vw;
+    
+    .subtirle {
+    margin-top: 0.5em;
+  font-size: 150%;
+}
+.ugapora {
+    grid-template-columns: 12em 25em;
     }
 }
+
+
+
 @media only screen and (max-width: 1000px) {
 
-    .blancos:first-child {
-        margin-left: 30vw;
+.blancos:first-child {
+    margin-left: 3em;
+}
+
+.imag {
+margin-left: 11.5em;
+}
+
+.guide {
+margin-left: 5em;
+}
+.imag2 {
+margin-left: 11.5em;
+}
+
+.guide2 {
+margin-left: 6em;
+}
+
+    .base {
+        margin-left: 20em;
     }
+  
+      .about2 {
+    grid-template-columns: 21em 21em 26em;
+    }
+      
     body {
         background-position-x: -20vw;
         background-size: 140vw 120vh;
     }
-    .preg {
-        right: 2.5vw;
-        width: 7vw;
-        border-radius: 100px;
-    }
-    .show {
-        right: 1vw;
-        width: 23vw;
-    }
-    .topcer {
-        width: 23vw;
-    }
-    .mess {
-        width: 20vw;
-    }
-    .botmess {
-        width: 15vw;
-    }
+
+
     .usermess {
         margin-left: 16vw;
     }
@@ -527,12 +610,26 @@ a:hover {
 }
 
 @media only screen and (max-width: 910px) {
-    .blancos:first-child {
-        margin-left: 30vw;
-    }
-    .blancos:first-child { 
-    margin-left: 8vw;
-    }
+.blancos:first-child {
+    margin-left: 1em;
+}
+
+.imag {
+margin-left: 8em;
+}
+
+.guide {
+margin-left: 2em;
+}
+.imag2 {
+margin-left: 8em;
+}
+
+.guide2 {
+margin-left: 2em;
+}
+
+
     .bk1, .bk2{
        background-position-x: 0vw;
 background-size: 140vw 120vh;   
@@ -543,13 +640,16 @@ background-size: 140vw 120vh;
     width: 12vw;
     }
     
+    .ugapora {
+    width: 37em;
+    }
     
     .base {
-        margin-left: 27vw;
-        width: 40vw;
+        margin-left: 16em;
     }
-    .about2 {
-        margin-top: -45vh;
+    
+      .about2 {
+    grid-template-columns: 19em 19em 26em;
     }
 
     .politics {
@@ -602,7 +702,7 @@ background-size: 140vw 120vh;
 }
 @media only screen and (max-width: 800px) {
     .blancos:first-child { 
-    margin-left: 3vw;
+    margin-left: 0;
     }
      .block{
         height: 16vh;
@@ -617,20 +717,53 @@ background-size: 140vw 120vh;
 }
 
 @media only screen and (max-width: 761px) {
-    .blancos:first-child {
-        margin-left: 14vw;
-    }
     .blancos:first-child { 
-    margin-left: 2vw;
+    margin-left: 0;
     }
+    .blancos {
+    margin-left: 1.2em;
+    }
+    
+    .imag {
+margin-left: 5em;
+}
+
+.guide {
+margin-left: 0;
+}
+.imag2 {
+margin-left: 5em;
+}
+
+.guide2 {
+margin-left: 0;
+}
+
+.blockes {
+    margin-left: 0;
+    grid-template-columns: 13em 13em 13em;
+    }
+    .uga {
+width: 34em;
+}
+.blockes2 {
+margin-left: 1em;
+}
+.ugapora {
+width: 37em;
+}
+
+      .about2 {
+    grid-template-columns: 15em 15em 26em;
+    }
+    
     .lang, .lang3 {
     width: 14vw;
     }
     
     
     .base {
-        margin-left: 22vw;
-        width: 47vw;
+        margin-left: 10em;
     }
     .preg {
         right: 3vw;
@@ -644,15 +777,7 @@ background-size: 140vw 120vh;
     .topcer {
         width: 26.2vw;
     }
-    .mess {
-        width: 24vw;
-    }
-    .botmess {
-        width: 20vw;
-    }
-    .botmessGrande {
-        width: 20vw;
-    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -682,13 +807,13 @@ background-size: 140vw 120vh;
         position: fixed;
         display: grid;
         background-color: black;
-        right: -100vw;
+        right: -10em;
         margin-top: 5vh;
     }
     .Button {
         position: absolute;
-        margin-top: -3vh;
-        right: 8vw;
+        margin-top: -0.3em;
+        right: 18em;
         color: white;
         font-size: 400%;
         cursor: pointer;
@@ -934,7 +1059,7 @@ background-size: 140vw 120vh;
         width: 110vw;
     }
     .map {
-        width: 100vw;
+        width: 100em;
     }
     .about2 {
         margin-left: 110vw;
